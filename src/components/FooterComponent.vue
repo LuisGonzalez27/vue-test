@@ -1,25 +1,51 @@
 <template>
     <footer>
-        {{ titolo }}
+        <div class=" cols container">
+            <a href="#" class="logo">
+                <img src="../assets/img/la-molisana-logo.png" alt="La Molisana">
+            </a>
+            <div class="footer-links">
+                <h4>Pastificio</h4>
+                <nav>
+                    <ul>
+                        <li><a href="#">Il Pastificio</a></li>
+                        <li><a href="#">Il Pastificio</a></li>
+                        <li><a href="#">Il Pastificio</a></li>
+                        <li><a href="#">Il Pastificio</a></li>
+                        <li><a href="#">Il Pastificio</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-links">
+
+            </div>
+
+        </div>
     </footer>
 </template>
 
 <script>
 export default {
-    name: 'FooterComponent',
-    data() {
-        return {
-            titolo: 'Footer, sono un componente'
-        }
-    }
+    name: 'FooterComponent'
 }
 </script>
 
-<style lang="css">
+<style lang="scss" scoped>
+@use '../assets/styles/partials/mixins' as*;
+@use '../assets/styles/partials/variables' as*;
+
 footer {
-    width: 100%;
-    height: 70px;
-    background-color: yellow;
-    padding: 20px;
+    padding-top: 3rem;
+
+    .cols {
+        display: flex;
+        margin-bottom: 3rem;
+
+        .logo,
+        .footer-llinks {
+            flex-basis: calc(100% /3);
+            padding: 0 1rem;
+        }
+    }
 }
 </style>

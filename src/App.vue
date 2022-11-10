@@ -1,9 +1,3 @@
-<template>
-  <HeaderComponent />
-  <h1>{{ message }}</h1>
-  <FooterComponent />
-</template>
-
 <script>
 import HeaderComponent from './components/HeaderComponet.vue';
 import FooterComponent from './components/FooterComponent.vue';
@@ -23,6 +17,12 @@ export default {
   },
 }
 </script>
+
+<template>
+  <HeaderComponent />
+  <h1>{{ message }}</h1>
+  <FooterComponent />
+</template>
 
 <style lang="css">
 h1 {

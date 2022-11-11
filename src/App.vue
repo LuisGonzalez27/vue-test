@@ -14,8 +14,8 @@ import ProductList from './components/ProductList.vue';
 export default {
   components: {
     HeaderComponent,
-    FooterComponent,
-    ProductList
+    ProductList,
+    FooterComponent
   }
 }
 </script>
